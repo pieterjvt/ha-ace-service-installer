@@ -84,7 +84,7 @@ session_watch() {
 
   wmctrl -s "$target_desktop" >/dev/null 2>&1 || true
 
-  while sleep 1; do
+  while sleep 5; do
     current="$(wmctrl -d 2>/dev/null | awk '$2 == "*" {print $1; exit}')"
     [ "$current" = "$target_desktop" ] ||
       wmctrl -s "$target_desktop" >/dev/null 2>&1 || true
