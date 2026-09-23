@@ -1,9 +1,9 @@
-name: ACE Service Installer
+name: ACE Service Installer DEV
 version: "0.1.2"
 slug: ace_service_installer
 description: Install and run the Alfen ACE Service Installer in Home Assistant
-image: "ghcr.io/ludero-git/ha-ace-service-installer"
-url: https://github.com/ludero-git/ha-ace-service-installer
+image: "ghcr.io/pieterjvt/ha-ace-service-installer"
+url: https://github.com/pieterjvt/ha-ace-service-installer
 arch:
   - amd64
   - aarch64
@@ -14,7 +14,7 @@ ingress: true
 ingress_port: 8100
 ingress_stream: true
 panel_icon: mdi:wrench-cog
-panel_title: ACE Service Installer
+panel_title: ACE Service Installer DEV
 panel_admin: true
 host_network: true
 privileged:
